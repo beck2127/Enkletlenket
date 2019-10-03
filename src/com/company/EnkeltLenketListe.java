@@ -180,7 +180,11 @@ public abstract class EnkeltLenketListe<T> implements Liste<T> {
         while (q != null)                         // q skal finne verdien t
         {
             if (q.verdi.equals(verdi)) break;       // verdien funnet
-            p = q; q = q.neste;                     // p er forgjengeren til q
+            p = q; q = q.neste;
+
+            // p er forgjengeren til q
+
+            ////
         }
 
         if (q == null) return false;              // fant ikke verdi
